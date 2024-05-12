@@ -1,27 +1,52 @@
-/* Apply a global box-sizing rule */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
-/* Style the body element */
 body {
-    font-family: 'Staatliches', cursive;
-    background-color: white;
-    color: white;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    background-color: rgb(234, 170, 204);
+    color: rgb(4, 9, 21);
     letter-spacing: 3px;
     width: 100%;
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
 }
 
-/* Style the card element */
+nav {
+    background-color: #333;
+    padding: 10px;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: rgb(137, 11, 11);
+    margin: 10px 0;
+}
+
 .card {
     width: 200px;
     height: 300px;
-    background-color: #f2f2f2;
+    background-color: #cf2f2f;
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
@@ -29,21 +54,14 @@ body {
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    background-color: #121c20;
+    color: rgb(84, 185, 144);
 }
 
 .card:hover {
     transform: scale(1.05);
 }
 
-/* Style the headings */
-
-h1, h2, h3  {
-    color: rgb(137, 11, 11);
-    margin: 10px 0;
-    content: center;
-}
-
-/* Style the links */
 a {
     text-decoration: none;
     color: rgb(12, 5, 5);
@@ -53,7 +71,6 @@ a:hover {
     color: #ff2a4a;
 }
 
-/* Style the buttons */
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -63,26 +80,34 @@ a:hover {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
+    background-color: #1164bc;
+    color: rgb(35, 129, 68);
 }
 
 .button:hover {
     background-color: #0056b3;
 }
 
-/* Add some color to the website */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #adc8d2;
-    background-image: url('evp.jpg');
+    background-image: url('evp-removebg-preview.png');
     background-size: 10px;
     opacity: 0.9;
     background-position: center;
 }
 
-.card {
-    background-color: #1e9dcb;
-}
-
-.button {
-    background-color: #1164bc;
-}
 
